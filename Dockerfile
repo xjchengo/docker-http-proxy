@@ -14,6 +14,5 @@ ADD run.sh /run.sh
 
 CMD ["/run.sh"]
 
-EXPOSE
 EXPOSE 22
 EXPOSE 80
