@@ -1,6 +1,9 @@
 FROM nginx
 MAINTAINER Xujian Chen <xjchen@echo58.com>
 
+# Use Reverse Proxy Config
+COPY nginx.conf /etc/nginx/nginx.conf
+
 # Install OpenSSH Server
 RUN apt-get update && \
     apt-get -y install openssh-server pwgen && \
@@ -11,4 +14,6 @@ ADD run.sh /run.sh
 
 CMD ["/run.sh"]
 
+EXPOSE
 EXPOSE 22
+EXPOSE 80

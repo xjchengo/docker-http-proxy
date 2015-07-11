@@ -12,6 +12,4 @@ echo ""
 echo "您的 root 密码为：$PASSWORD"
 echo "========================================================================"
 
-/usr/sbin/sshd -D
-
-exec nginx
+exec /usr/sbin/sshd -D
