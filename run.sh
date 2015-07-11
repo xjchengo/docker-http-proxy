@@ -12,4 +12,4 @@ echo ""
 echo "您的 root 密码为：$PASSWORD"
 echo "========================================================================"
 
-exec /usr/sbin/sshd -D
+exec supervisord
