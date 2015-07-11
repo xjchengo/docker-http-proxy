@@ -1,8 +1,6 @@
 FROM nginx
 MAINTAINER Xujian Chen <xjchen@echo58.com>
 
-# COPY sources.list /etc/apt/sources.list
-
 # Use Reverse Proxy Config
 COPY nginx.conf /etc/nginx/nginx.conf
 
